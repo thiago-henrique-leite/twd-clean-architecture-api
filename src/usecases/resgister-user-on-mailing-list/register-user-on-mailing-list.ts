@@ -1,7 +1,7 @@
 import { User } from '../../entities/user'
 import { UserData } from '../../entities/user-data'
 import { UserRepository } from './ports/user-repository'
-import { Either, left, right } from '../../share/either'
+import { Either, left, right } from '../../shared/either'
 import { InvalidNameError } from '../../entities/errors/invalid-name-error'
 import { InvalidEmailError } from '../../entities/errors/invalid-email-error'
 
