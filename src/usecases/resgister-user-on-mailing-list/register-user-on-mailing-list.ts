@@ -2,8 +2,9 @@ import { User, UserData } from '@/entities'
 import { UserRepository } from '@/usecases/resgister-user-on-mailing-list/ports'
 import { Either, left, right } from '@/shared'
 import { InvalidNameError, InvalidEmailError } from '@/entities/errors'
+import { UseCase } from '../ports'
 
-export class RegisterUserOnMailingList {
+export class RegisterUserOnMailingList implements UseCase {
   private readonly userRepo: UserRepository
 
   constructor (userRepo: UserRepository) {
