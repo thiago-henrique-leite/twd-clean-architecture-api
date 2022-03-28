@@ -1,8 +1,8 @@
-import { UserData } from '../../../src/entities'
-import { UserRepository } from '../../../src/usecases/resgister-user-on-mailing-list/ports'
-import { InMemoryUserRepository } from './repository'
-import { RegisterUserOnMailingList } from '../../../src/usecases/resgister-user-on-mailing-list'
-import { InvalidEmailError, InvalidNameError } from '../../../src/entities/errors'
+import { UserData } from '@/entities'
+import { UserRepository } from '@/usecases/resgister-user-on-mailing-list/ports'
+import { RegisterUserOnMailingList } from '@/usecases/resgister-user-on-mailing-list'
+import { InvalidEmailError, InvalidNameError } from '@/entities/errors'
+import { InMemoryUserRepository } from '@test/usecases/register-user-on-mailing-list/repository'
 
 describe('Register user on mailing list use case', () => {
   test('should add user with complete data to mailing list', async () => {
